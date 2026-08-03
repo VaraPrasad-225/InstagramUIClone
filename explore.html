@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore • Instagram Clone</title>
+  <meta name="description" content="Discover popular posts, trending reels, and community artwork on Instagram.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- MOBILE TOP BAR -->
+    <header class="mobile-topbar">
+      <a href="index.html" aria-label="Instagram Home">
+        <svg class="mobile-brand-logo" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+          <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Explore</text>
+        </svg>
+      </a>
+      <div class="mobile-topbar-actions">
+        <button class="search-drawer-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-top">
+        <div class="brand-logo-container">
+          <a href="index.html" aria-label="Instagram Home">
+            <svg class="brand-logo-full" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+              <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Instagram</text>
+            </svg>
+            <i class="fa-brands fa-instagram brand-logo-icon"></i>
+          </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-item">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-item-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item search-drawer-trigger" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="nav-item-label">Search</span>
+            </button>
+          </li>
+          <li>
+            <a href="explore.html" class="nav-item active">
+              <i class="fa-solid fa-compass"></i>
+              <span class="nav-item-label">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="reels.html" class="nav-item">
+              <i class="fa-solid fa-clapperboard"></i>
+              <span class="nav-item-label">Reels</span>
+            </a>
+          </li>
+          <li>
+            <a href="messages.html" class="nav-item">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span class="nav-item-label">Messages</span>
+              <span class="badge">4</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item notifications-drawer-trigger" aria-label="Notifications">
+              <i class="fa-regular fa-heart"></i>
+              <span class="nav-item-label">Notifications</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-item create-modal-trigger" aria-label="Create Post">
+              <i class="fa-regular fa-square-plus"></i>
+              <span class="nav-item-label">Create</span>
+            </button>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-item">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Your Profile" class="sidebar-avatar">
+              <span class="nav-item-label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+          <span class="nav-item-label">Dark Mode</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SEARCH SIDE DRAWER -->
+    <aside id="searchDrawer" class="side-drawer" aria-label="Search Panel">
+      <div class="drawer-header">
+        <h2 class="drawer-title">Search</h2>
+        <div class="search-input-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="drawerSearchInput" placeholder="Search..." aria-label="Search input">
+        </div>
+      </div>
+      <div id="searchResultsContent" class="drawer-content"></div>
+    </aside>
+
+    <!-- NOTIFICATIONS DRAWER -->
+    <aside id="notificationsDrawer" class="side-drawer" aria-label="Notifications Panel">
+      <div class="drawer-header"><h2 class="drawer-title">Notifications</h2></div>
+      <div class="drawer-content"></div>
+    </aside>
+
+    <!-- MAIN CONTENT VIEW: EXPLORE -->
+    <main class="main-content">
+      <div class="explore-container page-transition">
+        <div class="explore-grid">
+          
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Explore 1" loading="lazy">
+            <i class="fa-solid fa-clapperboard explore-icon-badge"></i>
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 45.2k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 620</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Explore 2" loading="lazy">
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 18.9k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 240</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item tall">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Explore Reel" loading="lazy">
+            <i class="fa-solid fa-play explore-icon-badge"></i>
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 98.4k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 1.5k</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80" alt="Explore 4" loading="lazy">
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 22.7k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 310</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Explore 5" loading="lazy">
+            <i class="fa-solid fa-layer-group explore-icon-badge"></i>
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 31.0k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 405</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Explore 6" loading="lazy">
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 14.5k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 190</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Explore 7" loading="lazy">
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 52.3k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 890</div>
+            </div>
+          </div>
+
+          <div class="explore-grid-item">
+            <img src="https://images.unsplash.com/photo-1476514525535-ce74f45814ce?auto=format&fit=crop&w=600&q=80" alt="Explore 8" loading="lazy">
+            <div class="grid-post-overlay">
+              <div class="overlay-stat"><i class="fa-solid fa-heart"></i> 27.9k</div>
+              <div class="overlay-stat"><i class="fa-solid fa-comment"></i> 360</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- CREATE POST MODAL -->
+    <div id="createPostModal" class="modal-backdrop" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Create new post</span>
+          <button class="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div style="padding: 30px 20px; text-align: center;">
+          <p>Drag & Drop media here</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

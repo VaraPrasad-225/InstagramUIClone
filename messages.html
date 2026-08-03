@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages • Direct • Instagram Clone</title>
+  <meta name="description" content="Send direct messages, voice notes, and media to friends on Instagram.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- MOBILE TOP BAR -->
+    <header class="mobile-topbar">
+      <a href="index.html" aria-label="Instagram Home">
+        <svg class="mobile-brand-logo" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+          <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Messages</text>
+        </svg>
+      </a>
+      <div class="mobile-topbar-actions">
+        <button class="search-drawer-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-top">
+        <div class="brand-logo-container">
+          <a href="index.html" aria-label="Instagram Home">
+            <svg class="brand-logo-full" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+              <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Instagram</text>
+            </svg>
+            <i class="fa-brands fa-instagram brand-logo-icon"></i>
+          </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-item">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-item-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item search-drawer-trigger" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="nav-item-label">Search</span>
+            </button>
+          </li>
+          <li>
+            <a href="explore.html" class="nav-item">
+              <i class="fa-regular fa-compass"></i>
+              <span class="nav-item-label">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="reels.html" class="nav-item">
+              <i class="fa-solid fa-clapperboard"></i>
+              <span class="nav-item-label">Reels</span>
+            </a>
+          </li>
+          <li>
+            <a href="messages.html" class="nav-item active">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span class="nav-item-label">Messages</span>
+              <span class="badge">4</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item notifications-drawer-trigger" aria-label="Notifications">
+              <i class="fa-regular fa-heart"></i>
+              <span class="nav-item-label">Notifications</span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-item create-modal-trigger" aria-label="Create Post">
+              <i class="fa-regular fa-square-plus"></i>
+              <span class="nav-item-label">Create</span>
+            </button>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-item">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Your Profile" class="sidebar-avatar">
+              <span class="nav-item-label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+          <span class="nav-item-label">Dark Mode</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SEARCH DRAWER -->
+    <aside id="searchDrawer" class="side-drawer" aria-label="Search Panel">
+      <div class="drawer-header"><h2 class="drawer-title">Search</h2></div>
+      <div id="searchResultsContent" class="drawer-content"></div>
+    </aside>
+
+    <!-- NOTIFICATIONS DRAWER -->
+    <aside id="notificationsDrawer" class="side-drawer" aria-label="Notifications Panel">
+      <div class="drawer-header"><h2 class="drawer-title">Notifications</h2></div>
+      <div class="drawer-content"></div>
+    </aside>
+
+    <!-- MAIN CONTENT VIEW: MESSAGES SPLIT UI -->
+    <main class="main-content">
+      <div class="messages-container page-transition">
+        
+        <!-- THREADS SIDEBAR -->
+        <aside class="chat-sidebar" aria-label="Conversations List">
+          <div class="chat-sidebar-header">
+            <span class="chat-username">alex_developer <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem;"></i></span>
+            <button aria-label="New Message" style="font-size: 1.2rem;"><i class="fa-regular fa-pen-to-square"></i></button>
+          </div>
+
+          <div class="conversations-list">
+            
+            <div class="conversation-item active">
+              <div class="conv-avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="cyber_alexa" class="conv-avatar">
+                <div class="online-indicator"></div>
+              </div>
+              <div class="conv-details">
+                <span class="conv-name">cyber_alexa</span>
+                <span class="conv-snippet">Sent a story reply • 12m</span>
+              </div>
+            </div>
+
+            <div class="conversation-item">
+              <div class="conv-avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="neo_dev" class="conv-avatar">
+                <div class="online-indicator"></div>
+              </div>
+              <div class="conv-details">
+                <span class="conv-name">neo_dev</span>
+                <span class="conv-snippet">That JS snippet is super clean!</span>
+              </div>
+            </div>
+
+            <div class="conversation-item">
+              <div class="conv-avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="sophia.vibe" class="conv-avatar">
+              </div>
+              <div class="conv-details">
+                <span class="conv-name">sophia.vibe</span>
+                <span class="conv-snippet">Active 2h ago</span>
+              </div>
+            </div>
+
+            <div class="conversation-item">
+              <div class="conv-avatar-wrapper">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="marcus_design" class="conv-avatar">
+              </div>
+              <div class="conv-details">
+                <span class="conv-name">marcus_design</span>
+                <span class="conv-snippet">Sent an attachment • 1d</span>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- CHAT MAIN AREA -->
+        <section class="chat-main" aria-label="Chat Thread">
+          
+          <header class="chat-main-header">
+            <div class="chat-header-user">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="cyber_alexa" class="chat-header-avatar">
+              <div>
+                <div style="font-weight: 600; font-size: 0.95rem;">cyber_alexa <i class="fa-solid fa-circle-check verified-icon"></i></div>
+                <div style="font-size: 0.75rem; color: var(--text-tertiary);">Active now</div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 20px; font-size: 1.2rem;">
+              <button aria-label="Audio call"><i class="fa-solid fa-phone"></i></button>
+              <button aria-label="Video call"><i class="fa-solid fa-video"></i></button>
+              <button aria-label="Conversation info"><i class="fa-solid fa-circle-info"></i></button>
+            </div>
+          </header>
+
+          <div id="chatMessagesArea" class="chat-messages-area">
+            <div class="message-bubble incoming">
+              Hey Alex! Loved your latest Shibuya post 🌆
+            </div>
+            <div class="message-bubble outgoing">
+              Thanks Alexa! Tokyo is magical this time of year.
+            </div>
+            <div class="message-bubble incoming">
+              Are you using Vanilla JS for your new web projects?
+            </div>
+            <div class="message-bubble outgoing">
+              Yes! Pure HTML, CSS variables, and ES6+ modules. Lightning fast performance! ⚡
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator-wrapper">
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+              <div class="typing-dot"></div>
+            </div>
+          </div>
+
+          <div class="chat-input-bar">
+            <div class="chat-input-box">
+              <button aria-label="Emoji picker" style="font-size: 1.1rem;"><i class="fa-regular fa-face-smile"></i></button>
+              <input type="text" id="chatTextInput" class="chat-text-input" placeholder="Message..." aria-label="Message input">
+              <button aria-label="Voice Note" style="font-size: 1.1rem;"><i class="fa-solid fa-microphone"></i></button>
+              <button aria-label="Attach Photo" style="font-size: 1.1rem;"><i class="fa-regular fa-image"></i></button>
+            </div>
+            <button id="sendMsgBtn" class="comment-post-btn active" style="font-size: 0.95rem;">Send</button>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+    <!-- CREATE POST MODAL -->
+    <div id="createPostModal" class="modal-backdrop" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Create new post</span>
+          <button class="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div style="padding: 30px 20px; text-align: center;"><p>Drag & Drop media here</p></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Chat Send Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const input = document.getElementById('chatTextInput');
+      const sendBtn = document.getElementById('sendMsgBtn');
+      const chatArea = document.getElementById('chatMessagesArea');
+
+      function sendMsg() {
+        const txt = input.value.trim();
+        if (!txt) return;
+
+        const bubble = document.createElement('div');
+        bubble.className = 'message-bubble outgoing fade-in';
+        bubble.textContent = txt;
+        
+        // Insert before typing indicator
+        const typingWrapper = chatArea.querySelector('.typing-indicator-wrapper');
+        chatArea.insertBefore(bubble, typingWrapper);
+
+        input.value = '';
+        chatArea.scrollTop = chatArea.scrollHeight;
+      }
+
+      sendBtn.addEventListener('click', sendMsg);
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') sendMsg();
+      });
+    });
+  </script>
+</body>
+</html>

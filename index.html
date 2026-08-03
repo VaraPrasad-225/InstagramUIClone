@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone • Web (2026 Edition)</title>
+  <meta name="description" content="A premium, recruiter-ready Instagram Web UI Clone built with HTML5, CSS3, and Vanilla JavaScript.">
+  
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- MOBILE TOP BAR (Visible <= 767px) -->
+    <header class="mobile-topbar">
+      <a href="index.html" aria-label="Instagram Home">
+        <svg class="mobile-brand-logo" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+          <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Instagram</text>
+        </svg>
+      </a>
+      <div class="mobile-topbar-actions">
+        <button class="notifications-drawer-trigger" aria-label="Notifications"><i class="fa-regular fa-heart"></i></button>
+        <a href="messages.html" aria-label="Messages"><i class="fa-regular fa-paper-plane"></i></a>
+      </div>
+    </header>
+
+    <!-- MAIN SIDEBAR NAVIGATION -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-top">
+        <div class="brand-logo-container">
+          <a href="index.html" aria-label="Instagram Home">
+            <svg class="brand-logo-full" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+              <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Instagram</text>
+            </svg>
+            <i class="fa-brands fa-instagram brand-logo-icon"></i>
+          </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-item active">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-item-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item search-drawer-trigger" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="nav-item-label">Search</span>
+            </button>
+          </li>
+          <li>
+            <a href="explore.html" class="nav-item">
+              <i class="fa-regular fa-compass"></i>
+              <span class="nav-item-label">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="reels.html" class="nav-item">
+              <i class="fa-solid fa-clapperboard"></i>
+              <span class="nav-item-label">Reels</span>
+            </a>
+          </li>
+          <li>
+            <a href="messages.html" class="nav-item">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span class="nav-item-label">Messages</span>
+              <span class="badge">4</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item notifications-drawer-trigger" aria-label="Notifications">
+              <i class="fa-regular fa-heart"></i>
+              <span class="nav-item-label">Notifications</span>
+              <span class="badge"></span>
+            </button>
+          </li>
+          <li>
+            <button class="nav-item create-modal-trigger" aria-label="Create Post">
+              <i class="fa-regular fa-square-plus"></i>
+              <span class="nav-item-label">Create</span>
+            </button>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-item">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Your Profile" class="sidebar-avatar">
+              <span class="nav-item-label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+          <span class="nav-item-label">Dark Mode</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SEARCH SIDE DRAWER -->
+    <aside id="searchDrawer" class="side-drawer" aria-label="Search Panel">
+      <div class="drawer-header">
+        <h2 class="drawer-title">Search</h2>
+        <div class="search-input-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="drawerSearchInput" placeholder="Search users or hashtags..." aria-label="Search input">
+          <button id="clearSearchBtn" class="clear-search-btn" style="display:none;" aria-label="Clear search"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+      </div>
+      <div id="searchResultsContent" class="drawer-content">
+        <!-- Live search results or recent searches populated via search.js -->
+      </div>
+    </aside>
+
+    <!-- NOTIFICATIONS SIDE DRAWER -->
+    <aside id="notificationsDrawer" class="side-drawer" aria-label="Notifications Panel">
+      <div class="drawer-header">
+        <h2 class="drawer-title">Notifications</h2>
+      </div>
+      <div class="drawer-content">
+        <div class="notification-group">
+          <span class="group-label">Today</span>
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="notif-avatar" alt="alexa_rivers">
+              <div class="notif-text">
+                <span class="username">cyber_alexa</span> liked your photo.<span class="notif-time">2h</span>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=100&q=80" class="notif-media-thumb" alt="post thumb">
+          </div>
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="notif-avatar" alt="neo_dev">
+              <div class="notif-text">
+                <span class="username">neo_dev</span> started following you.<span class="notif-time">4h</span>
+              </div>
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+
+        <div class="notification-group" style="margin-top: 16px;">
+          <span class="group-label">This Week</span>
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" class="notif-avatar" alt="sophia.vibe">
+              <div class="notif-text">
+                <span class="username">sophia.vibe</span> commented: "Insane shot! 🔥"<span class="notif-time">2d</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT VIEW: HOME FEED -->
+    <main class="main-content">
+      <div class="feed-layout">
+        
+        <!-- FEED MAIN COLUMN -->
+        <section class="feed-main">
+          
+          <!-- STORIES CONTAINER -->
+          <div class="stories-container">
+            <button id="storiesPrevBtn" class="stories-nav-btn prev hidden" aria-label="Previous Stories"><i class="fa-solid fa-chevron-left"></i></button>
+            <div id="storiesScrollWrapper" class="stories-scroll-wrapper">
+              <!-- Stories rendered via stories.js -->
+            </div>
+            <button id="storiesNextBtn" class="stories-nav-btn next" aria-label="Next Stories"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+
+          <!-- POSTS FEED CONTAINER -->
+          <div id="postsFeedContainer" class="posts-feed-container">
+            <!-- 15 Realistic Posts rendered via script.js -->
+          </div>
+
+        </section>
+
+        <!-- RIGHT SIDEBAR (SUGGESTIONS & FOOTER) -->
+        <aside class="right-sidebar" aria-label="Suggested Accounts">
+          <div class="user-profile-summary">
+            <a href="profile.html" class="summary-user-link">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="your_profile" class="summary-avatar">
+              <div class="summary-info">
+                <span class="summary-username">alex_developer</span>
+                <span class="summary-fullname">Alex Rivers</span>
+              </div>
+            </a>
+            <button class="switch-btn">Switch</button>
+          </div>
+
+          <div class="suggestions-header">
+            <span class="suggestions-title">Suggested for you</span>
+            <button class="see-all-btn">See All</button>
+          </div>
+
+          <div class="suggestions-list">
+            <div class="suggestion-item">
+              <div class="suggestion-user">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" class="suggestion-avatar" alt="marcus_design">
+                <div class="suggestion-info">
+                  <span class="suggestion-username">marcus_design</span>
+                  <span class="suggestion-relation">Followed by neo_dev + 8 more</span>
+                </div>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="suggestion-item">
+              <div class="suggestion-user">
+                <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=100&q=80" class="suggestion-avatar" alt="elena_art">
+                <div class="suggestion-info">
+                  <span class="suggestion-username">elena_art</span>
+                  <span class="suggestion-relation">Suggested for you</span>
+                </div>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="suggestion-item">
+              <div class="suggestion-user">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=100&q=80" class="suggestion-avatar" alt="urban_explorer">
+                <div class="suggestion-info">
+                  <span class="suggestion-username">urban_explorer</span>
+                  <span class="suggestion-relation">New to Instagram</span>
+                </div>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+            <div class="suggestion-item">
+              <div class="suggestion-user">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" class="suggestion-avatar" alt="chloe_lifestyle">
+                <div class="suggestion-info">
+                  <span class="suggestion-username">chloe_lifestyle</span>
+                  <span class="suggestion-relation">Popular</span>
+                </div>
+              </div>
+              <button class="follow-btn">Follow</button>
+            </div>
+          </div>
+
+          <footer class="footer-links">
+            <div class="footer-links-list">
+              <a href="#">About</a> • <a href="#">Help</a> • <a href="#">Press</a> • <a href="#">API</a> • 
+              <a href="#">Jobs</a> • <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Locations</a>
+            </div>
+            <div>© 2026 INSTAGRAM CLONE FROM TAP ACADEMY</div>
+          </footer>
+        </aside>
+
+      </div>
+    </main>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- STORY VIEWER MODAL -->
+    <div id="storyViewerModal" class="story-viewer-modal" aria-modal="true" role="dialog">
+      <div class="story-viewer-card">
+        <div class="story-progress-bar-container">
+          <div class="story-progress-segment"><div class="story-progress-fill"></div></div>
+        </div>
+        <div class="story-viewer-header">
+          <div class="story-viewer-user">
+            <img src="" alt="" class="story-viewer-avatar">
+            <span class="story-viewer-username"></span>
+          </div>
+          <button class="modal-close-btn" aria-label="Close Story"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <img src="" alt="Story content" class="story-viewer-media">
+      </div>
+    </div>
+
+    <!-- CREATE POST MODAL -->
+    <div id="createPostModal" class="modal-backdrop" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Create new post</span>
+          <button class="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div style="padding: 30px 20px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+          <i class="fa-regular fa-images" style="font-size: 3.5rem; color: var(--text-tertiary);"></i>
+          <p style="font-size: 1rem; font-weight: 500;">Drag photos and videos here</p>
+          <button class="btn-secondary" onclick="document.getElementById('fileInputMock').click();">Select from computer</button>
+          <input type="file" id="fileInputMock" style="display:none;">
+          <button id="shareNewPostBtn" class="comment-post-btn active" style="margin-top: 10px; font-size: 0.95rem;">Share Post</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/stories.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

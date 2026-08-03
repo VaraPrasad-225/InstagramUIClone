@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications • Instagram Clone</title>
+  <meta name="description" content="View your latest likes, follow requests, comments, and mentions on Instagram.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- MOBILE TOP BAR -->
+    <header class="mobile-topbar">
+      <a href="index.html" aria-label="Instagram Home">
+        <svg class="mobile-brand-logo" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+          <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Notifications</text>
+        </svg>
+      </a>
+      <div class="mobile-topbar-actions">
+        <button class="search-drawer-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav class="sidebar" aria-label="Main Navigation">
+      <div class="sidebar-top">
+        <div class="brand-logo-container">
+          <a href="index.html" aria-label="Instagram Home">
+            <svg class="brand-logo-full" viewBox="0 0 105 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12v14c0 6.63 5.37 12 12 12h14c6.63 0 12-5.37 12-12V12C38 5.37 32.63 0 26 0H12zm0 3.8h14c4.54 0 8.2 3.66 8.2 8.2v14c0 4.54-3.66 8.2-8.2 8.2H12c-4.54 0-8.2-3.66-8.2-8.2V12c0-4.54 3.66-8.2 8.2-8.2zM29 7.5a2 2 0 100 4 2 2 0 000-4zM19 9a10 10 0 100 20 10 10 0 000-20zm0 3.8a6.2 6.2 0 110 12.4 6.2 6.2 0 010-12.4z" fill="currentColor"/>
+              <text x="44" y="26" font-family="'Inter', sans-serif" font-weight="700" font-size="22" fill="currentColor">Instagram</text>
+            </svg>
+            <i class="fa-brands fa-instagram brand-logo-icon"></i>
+          </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-item">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-item-label">Home</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item search-drawer-trigger" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="nav-item-label">Search</span>
+            </button>
+          </li>
+          <li>
+            <a href="explore.html" class="nav-item">
+              <i class="fa-regular fa-compass"></i>
+              <span class="nav-item-label">Explore</span>
+            </a>
+          </li>
+          <li>
+            <a href="reels.html" class="nav-item">
+              <i class="fa-solid fa-clapperboard"></i>
+              <span class="nav-item-label">Reels</span>
+            </a>
+          </li>
+          <li>
+            <a href="messages.html" class="nav-item">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span class="nav-item-label">Messages</span>
+              <span class="badge">4</span>
+            </a>
+          </li>
+          <li>
+            <a href="notifications.html" class="nav-item active">
+              <i class="fa-solid fa-heart"></i>
+              <span class="nav-item-label">Notifications</span>
+            </a>
+          </li>
+          <li>
+            <button class="nav-item create-modal-trigger" aria-label="Create Post">
+              <i class="fa-regular fa-square-plus"></i>
+              <span class="nav-item-label">Create</span>
+            </button>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-item">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Your Profile" class="sidebar-avatar">
+              <span class="nav-item-label">Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="nav-item theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+          <span class="nav-item-label">Dark Mode</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- SEARCH SIDE DRAWER -->
+    <aside id="searchDrawer" class="side-drawer" aria-label="Search Panel">
+      <div class="drawer-header"><h2 class="drawer-title">Search</h2></div>
+      <div id="searchResultsContent" class="drawer-content"></div>
+    </aside>
+
+    <!-- NOTIFICATIONS DRAWER -->
+    <aside id="notificationsDrawer" class="side-drawer" aria-label="Notifications Panel">
+      <div class="drawer-header"><h2 class="drawer-title">Notifications</h2></div>
+      <div class="drawer-content"></div>
+    </aside>
+
+    <!-- MAIN CONTENT VIEW: NOTIFICATIONS PAGE -->
+    <main class="main-content">
+      <div class="notifications-container page-transition">
+        <h1 class="notifications-title">Notifications</h1>
+
+        <div class="notification-group">
+          <span class="group-label">Today</span>
+          
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" class="notif-avatar" alt="cyber_alexa">
+              <div class="notif-text">
+                <span class="username">cyber_alexa</span> liked your photo.<span class="notif-time">2h</span>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=150&q=80" class="notif-media-thumb" alt="media thumb">
+          </div>
+
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" class="notif-avatar" alt="neo_dev">
+              <div class="notif-text">
+                <span class="username">neo_dev</span> started following you.<span class="notif-time">4h</span>
+              </div>
+            </div>
+            <button class="follow-btn" onclick="toggleFollow(this, 'neo_dev')">Follow</button>
+          </div>
+        </div>
+
+        <div class="notification-group" style="margin-top: 20px;">
+          <span class="group-label">This Week</span>
+
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" class="notif-avatar" alt="sophia.vibe">
+              <div class="notif-text">
+                <span class="username">sophia.vibe</span> commented on your post: "Insane shot! 🔥"<span class="notif-time">2d</span>
+              </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=150&q=80" class="notif-media-thumb" alt="media thumb">
+          </div>
+
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" class="notif-avatar" alt="marcus_design">
+              <div class="notif-text">
+                <span class="username">marcus_design</span> mentioned you in a comment.<span class="notif-time">3d</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification-item">
+            <div class="notif-user">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=150&q=80" class="notif-avatar" alt="elena_art">
+              <div class="notif-text">
+                <span class="username">elena_art</span> started following you.<span class="notif-time">5d</span>
+              </div>
+            </div>
+            <button class="follow-btn" onclick="toggleFollow(this, 'elena_art')">Following</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- CREATE POST MODAL -->
+    <div id="createPostModal" class="modal-backdrop" aria-modal="true" role="dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span>Create new post</span>
+          <button class="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div style="padding: 30px 20px; text-align: center;"><p>Drag & Drop media here</p></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function toggleFollow(btn, username) {
+      if (btn.textContent === 'Follow') {
+        btn.textContent = 'Following';
+        btn.style.color = 'var(--text-primary)';
+        showToast(`You are now following ${username}`);
+      } else {
+        btn.textContent = 'Follow';
+        btn.style.color = 'var(--accent-blue)';
+        showToast(`Unfollowed ${username}`);
+      }
+    }
+  </script>
+</body>
+</html>
