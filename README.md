@@ -7,7 +7,7 @@ This project accurately replicates the latest desktop and mobile web experience 
 ---
 
 ## 🚀 Live Demo & Repository
-- **Live Demo**: 
+- **Live Demo**: https://varaprasad-225.github.io/InstagramUIClone/
 - **GitHub Repository**: https://github.com/VaraPrasad-225/InstagramUIClone
 
 ---
