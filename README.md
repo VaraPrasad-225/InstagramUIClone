@@ -7,8 +7,8 @@ This project accurately replicates the latest desktop and mobile web experience 
 ---
 
 ## 🚀 Live Demo & Repository
-- **Live Demo**: [https://instagram-ui-clone.vercel.app](https://instagram-ui-clone.vercel.app) *(Placeholder)*
-- **GitHub Repository**: [https://github.com/your-username/instagram-ui-clone](https://github.com/your-username/instagram-ui-clone) *(Placeholder)*
+- **Live Demo**: 
+- **GitHub Repository**: https://github.com/VaraPrasad-225/InstagramUIClone
 
 ---
 
